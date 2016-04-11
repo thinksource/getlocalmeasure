@@ -18,9 +18,15 @@ We need a way of finding all the occurrences of a particular set of characters i
 textToSearch = "Peter told me that peter the pickle piper piped a pitted pickle before he petered out. Phew!"
 
 Subtext: Expected Result
+
 Peter "1, 20, 75"
+
 peter "1, 20, 75"
+
 pick "30, 58"
+
 pi "30, 37, 43, 51, 58"
+
 z "<No Output>"
+
 Peterz “<No Output>”
