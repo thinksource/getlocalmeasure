@@ -1,5 +1,7 @@
-def make_delta1(p):
+def bad_character_table(p):
     p=p.lower()
+    #if just use ASCII 
+    # ALPHABET_LEN = 128
     ALPHABET_LEN = 256
     i = 0
     patternlen = len(p)
@@ -19,7 +21,7 @@ def find(s, p):
     # find first occurrence of p in s
     n = len(s)
     m = len(p)
-    skip = make_delta1(p)[ord(p[m-1])]
+    skip = bad_character_table(p)[ord(p[m-1])]
     i = 0
     re=[]
     while i <= n-m:
